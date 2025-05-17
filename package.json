@@ -1,0 +1,23 @@
+{
+  "type": "commonjs",
+  "name": "hardhat-fund-me",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@nomiclabs/hardhat-solhint": "^4.0.1",
+    "hardhat": "^2.24.0",
+    "hardhat-deploy": "^1.0.2"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^1.4.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.5.0"
+  },
+  "scripts": {
+    "test": "npx hardhat test",
+    "test:staging": "npx hardhat test --network sepolia",
+    "lint": "npx solhint 'contracts/**/*.sol'",
+    "lint:fix": "npx solhint --fix 'contracts/**/*.sol'",
+    "format": "npx prettier --write .",
+    "coverage": "npx hardhat coverage"
+  }
+}

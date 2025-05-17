@@ -1,0 +1,47 @@
+{
+  "extends": "solhint:recommended",
+  "plugins": [],
+  "rules": {
+    "avoid-suicide": "error",
+    "avoid-sha3": "error",
+    "not-rely-on-time": "warn",
+    "avoid-low-level-calls": "warn",
+    "avoid-tx-origin": "error",
+    "reentrancy": "error",
+    "state-visibility": "error",
+    "check-send-result": "error",
+    "avoid-call-value": "error",
+    
+    "max-states-count": ["warn", 15],
+    "no-empty-blocks": "warn",
+    "no-unused-vars": "error",
+    
+    "func-visibility": ["error", { "ignoreConstructors": true }],
+    "quotes": ["error", "double"],
+    "const-name-snakecase": "warn",
+    "func-name-mixedcase": "error",
+    "modifier-name-mixedcase": "error",
+    "use-forbidden-name": "error",
+    "var-name-mixedcase": "error",
+    "imports-on-top": "error",
+    "visibility-modifier-order": "error",
+    "function-max-lines": ["warn", 50],
+    "code-complexity": ["warn", 7],
+    
+    "compiler-version": ["error", "^0.8.0"],
+    "reason-string": ["warn", { "maxLength": 64 }],
+    
+    "no-inline-assembly": "warn",
+    "no-complex-fallback": "warn",
+    "explicit-types": "error",
+    "no-global-import": "error",
+    "named-parameters-mapping": "warn",
+    "private-vars-leading-underscore": ["warn", { "strict": false }],
+    "immutable-vars-naming": "warn",
+    
+    "gas-custom-errors": "warn",
+    "no-console": "off",
+    "max-line-length": ["warn", 120]
+  }
+}
+
